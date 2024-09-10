@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style: none;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #ecf3f2;
+    color: #666;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+header{
+    background-color: #68a1af;
+    padding: 2rem 0;
+    position: sticky;
+    top: 0;
+
+}
+.menu>li,.menu>a{
+    display: inline-block;
+}
+.menu li{
+    position: relative;
+}
+.menu a{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    counter-reset: #fff;
+    display: block;
+    width: 100px;
+    padding: 10px;
+    transition: background-color .22s ease,color.22s ease;
+}
+.menu a:hover{
+    background-color: #f34949;
+    color: #fff;
+}
+.submenu{
+    position: absolute;
+    background-color: #2c3e50;
+    width: 100px;
+    left: 0;
+    display: none;
+}
+
+
+.menu li:hover>.submenu{
+    display: block;
+    animation: slidedown .3s ease;
+}
+.submenu li:hover>.submenu2{
+    display: block;
+    animation: slideleft .3s ease;
+}
+@keyframes slidedown{
+    0%{
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+/*container*/
+.container{
+    width: 100%;
+    
+}
+.navbar{
+    height: 5px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar .logo {
+    width: 25%;
+}
+  
+.navbar .logo a {
+    text-decoration: none;
+    color: red;
+}
+
+.navbar .logo a h1 {
+    font-size: 36px;
+}
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+}
+  
+.navbar .navbar-right .search-box {
+    
+    display: flex;
+    align-items: center;
+    width: 220px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+}
+  
+.navbar .navbar-right .search-box input {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    padding-left: 2%;
+}
+  
+.navbar .navbar-right .search-box i {
+    width: 20%;
+    background-color: #47494c;
+    border-left: 1px solid #000000;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 0;
+    
+ }
+  
+.navbar .navbar-right .user {
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+ /* Shoes Section */
+ .Shoes {
+    width: 100%;
+    max-width: 75%;
+    margin: auto;
+    height: 100vh;
+    background-color: #ebebeb;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .Shoes .detail {
+    width: 100%;
+    height: 85%;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    align-items: center;
+  }
+  
+  .Shoes .detail .content-Shoe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 80%;
+    background-color: #b8b8b8;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 2px 0px 5px #333333;
+    transition: all 0.1s linear;
+  }
+  
+  .Shoes .detail .content-Shoe:hover {
+    box-shadow: 0px 2px 5px #333333;
+  }
+  
+  
+  .Shoes .detail .content-Shoe .desc {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+    color: #f34949;
+  }
+  
+  .Shoes .detail .content-Shoe img {
+    width: 100%;
+    cursor: pointer;
+  }
+  /* Footer */
+  .footer {
+    width: 100%;
+    height: 300px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer .social-icon i {
+    cursor: pointer;
+    font-size: 40px;
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 0 20px 20px;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+  }
+  
+  .footer .social-icon i:hover {
+    background-color: #75757575;
+    color: #ffffff;
+  }
+  
+  .footer .footer-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .footer .footer-nav li a {
+    color: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-weight: bold;
+  }
+  
+  .footer .footer-nav li:hover a {
+    text-decoration: underline;
+  }
